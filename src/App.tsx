@@ -12,6 +12,7 @@ import { Toaster } from "./components/refine-ui/notification/toaster";
 import { useNotificationProvider } from "./components/refine-ui/notification/use-notification-provider";
 import { ThemeProvider } from "./components/refine-ui/theme/theme-provider";
 import { dataProvider } from "./providers/data";
+import Dashboard from "./pages/dashboard";
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
               }}
             >
               <Routes>
-                <Route index element={<WelcomePage />} />
+                <Route path="/" element={<Dashboard/>} />
               </Routes>
               <Toaster />
               <RefineKbar />
